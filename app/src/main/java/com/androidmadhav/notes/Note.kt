@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey
 //we can also change the column name explicitly
 class Note(@ColumnInfo(name = "note_text") val text: String) {
 //    it will autogenerate a new id no everytime we add a row
-    @PrimaryKey(autoGenerate = true) val id: Int = 0
+    @PrimaryKey(autoGenerate = true) var id: Int = 0
 
 }
 
